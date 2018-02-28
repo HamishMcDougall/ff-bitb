@@ -1,0 +1,33 @@
+.wizard {
+    font-weight: 500;
+    display: flex;
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.04);
+
+    > .current {
+        background-color: $brand-primary;
+        margin-right: 0;
+        border-color: $brand-primary;
+    }
+
+    a {
+        background: white;
+        margin: 0;
+        padding: 20px;
+        flex: 1;
+        border-right: 1px solid $laravel-border-color;
+
+        &:before,
+        &:after {
+            display: none;
+        }
+
+        &:first-child {
+            border-radius: 10px 0 0 10px;
+        }
+
+        &:last-child {
+            border-radius: 0 10px 10px 0;
+            border: 0;
+        }
+    }
+}
